@@ -7,22 +7,22 @@ while True:
     print("**********WHATSAPP BOMBER************")
 
     try:
-        name = input('Kullanýcý veya Grup Adý Yaz : ')
+        name = input('Kullanici veya Grup Adi Yaz : ')
     except:
-            print("Hata Oluþtu")
-            name = input('Kullanýcý veya Grup Adý Yaz : ')
+            print("Hata Olustu")
+            name = input('Kullanici veya Grup Adi Yaz : ')
     try:
-        msg = input('Mesajýný Yaz : ')
+        msg = input('Mesajini Yaz : ')
     except:
-        print("Bir hata oluþtu")
-        msg = input('Mesajýný Yaz : ')
+        print("Bir hata oluÃ¾tu")
+        msg = input('Mesajini Yaz : ')
     try:
-        count = int(input('Kaç Adet Gönderilsin : '))
+        count = int(input('KaÃ§ Adet GÃ¶nderilsin : '))
     except: 
-        print("Hata Oluþtu")
-        count = int(input('Kaç Adet Gönderilsin : '))
+        print("Hata Olustu")
+        count = int(input('KaÃ§ Adet GÃ¶nderilsin : '))
         
-    input('Göndermek Ýçin Basýnýz')
+    input('GÃ¶ndermek icin Basiniz')
 
     user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
     user.click()
